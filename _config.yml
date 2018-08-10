@@ -1,0 +1,8 @@
+name: TESTING
+markdown: redcarpet
+description: this is description
+baseurl: "rice_blog"
+url: ""
+
+
+exclude: ["node_modules", "gulpfile.js", "package.json"]
