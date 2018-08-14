@@ -1,14 +1,23 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Rice部落格
+description: "安安你好，未滿２０歲休閒部落格"
 ---
+<div class="home-wrap">
+	{% include header.html %}
+<!-- Right side MAIN area in blog -->
+	<div class="home-sections">
+		{% include hero.html %}
+<!-- Content below the hero section -->
+		<div class="content-wrap">
+			<h1>這是初始文章</h1>
+			<p>原本常用網名是Anderice，但連自己都不會念就被簡化為Rice了</p>
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-  <h1>hehe</h1>
-	{% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+			{% include artical-sections.html %}
+			<hr class="hr-heavy">
+
+			{% include allposts.html %}
+
+		</div>
+	</div>
 </div>

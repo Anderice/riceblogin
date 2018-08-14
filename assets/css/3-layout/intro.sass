@@ -1,0 +1,66 @@
+section
+  position: relative
+  width: 100%
+  height: 120vh
+  text-align: center
+  margin: auto
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+  .box
+    box-shadow: 0 0 3rem gray
+    margin-bottom: 5rem
+    background-color: $light
+    padding: 2rem 5rem
+    border-radius: 1rem
+    max-width: 500px
+
+    z-index: 1
+
+    img
+      width: 100px
+      height: auto
+      border-radius: 50%
+
+.links
+  & > ul
+    display: flex
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+    & > li
+      background-color: $light
+      margin: 1rem
+      color: red
+
+      & > a
+        text-decoration: none
+
+.container
+  width: 70%
+  max-width: 1000px
+  margin: auto
+
+// .pro-contain
+//   position: absolute
+//   top: -100px
+//   display: flex
+//   flex-wrap: wrap
+//   justify-content: center
+//   width: 70%
+//
+//
+// .pro-items
+//   background-color: $main
+//   max-width: 500px
+//   padding: 2rem
+//   margin: 1rem
+
+
+// 第一頁背景
+section:nth-of-type(1)
+  background: url("https://picsum.photos/g/1920/1080") no-repeat center fixed
+  background-size: cover

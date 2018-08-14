@@ -1,0 +1,19 @@
+$light: #EFEFEF
+$light-2: #F3EDDF
+$dark: #423964
+$light-gradient: rgba(0, 0, 0, 0.5)
+$light-gray: rgba(0, 0, 0, 0.1)
+
+$main: #EFCC77
+
+@mixin clearfix
+  &::after
+    content: ""
+    display: table
+    clear: both
+
+@mixin box-shadow-passive
+  box-shadow: 0px 0px 5px $dark
+
+@mixin box-shadow-active
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2)

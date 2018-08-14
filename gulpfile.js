@@ -40,15 +40,15 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-    return gulp.src('_scss/main.scss')
+    return gulp.src('assets/css/*.sass')
         .pipe(sass({
-            includePaths: ['scss'],
+            includePaths: ['css'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('_site/css'))
+        .pipe(gulp.dest('_site/assets/css'))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('assets/css'));
 });
 
 /**
@@ -56,8 +56,13 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch('assets/css/*.sass', ['sass']);
+    // 查看變動，執行sass Function
+    gulp.watch('assets/css/3-layout/*.sass', ['sass']);
+    gulp.watch('assets/css/2-modules/*.sass', ['sass']);
+    gulp.watch('assets/css/1-base/*.sass', ['sass']);
+
+    gulp.watch(['*.html', '_layouts/*.html', '_posts/*','pages/*','_includes/*'], ['jekyll-rebuild']);
 });
 
 /**

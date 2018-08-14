@@ -1,0 +1,47 @@
+.all-posts
+
+
+.post
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  text-align: center
+  background: $light-2
+  margin: 3rem 5rem
+  transition: 0.3s
+
+
+  &:hover
+    transform: scale(1.05)
+    @include box-shadow-active
+
+  >img
+    transition: 0.3s
+    height: 300px
+    float: left
+    object-fit: cover
+
+
+    filter: blur(1px)
+
+  >img:hover
+    filter: blur(0px)
+
+.post-content
+  padding: 0 3rem
+  border: 3px solid $light-2
+
+  >li
+    list-style-type: none
+
+.post-content-detail
+
+  font-size: 1.1rem
+
+
+.post-title
+  font-size: 3rem
+
+
+  &>a
+    text-decration: none

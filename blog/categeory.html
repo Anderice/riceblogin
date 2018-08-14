@@ -1,0 +1,52 @@
+---
+layout: default
+title: 文章分類
+description: test
+test: "testing"
+permalink: /categeory/
+---
+<div class="home-wrap">
+	{% include header.html %}
+<!-- Right side MAIN area in blog -->
+	<div class="home-sections">
+		{% include hero.html %}
+<!-- Content below the hero section -->
+		<div class="content-wrap">
+			<h1>檔案分類</h1>
+			<hr class="hr-heavy float-left">
+			<div id="archives">
+			{% for category in site.categories %}
+			  <div class="archive-group">
+			    {% capture category_name %}{{ category | first }}{% endcapture %}
+			    <div id="#{{ category_name | slugize }}"></div>
+			    <p></p>
+			    <h2 class="category-head">{{ category_name }}</h2>
+					    <a name="{{ category_name | slugize }}"></a>
+			    {% for post in site.categories[category_name] %}
+			    <article class="archive-item">
+
+						  <img src="{{ site.baseurl }}{{ post.image }}" href="{{ site.baseurl }}{{ post.url }}" alt="">
+							<!-- Return Page title -->
+							<h4><a class="archive-link" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+							<i class="far fa-calendar-alt fa-lg"></i>
+							<hr class="hr-vertical hr-heavy">
+							<time>{{ post.date | date_to_string }}</time>
+
+						<p class="archive-description">{{post.description}}
+
+					</article>
+					<hr class="hr-light hr-space">
+			    {% endfor %}
+			  </div>
+			{% endfor %}
+			</div>
+
+
+
+
+
+
+
+		</div>
+	</div>
+</div>

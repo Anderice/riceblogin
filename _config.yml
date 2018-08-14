@@ -1,8 +1,17 @@
 name: TESTING
 markdown: redcarpet
-description: this is description
-baseurl: "rice_blog"
-url: ""
+exclude: ["node_modules", "gulpfile.js", "package.json","README.md"]
+baseurl: ""
 
+collections:
+  cats:
+    output: true
+    permalink: /cats/:path/
 
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+defaults:
+    -
+        scope:
+            path:   ""
+            type: "posts" #in Posts Folder using under values
+        values:
+            layout: "post"

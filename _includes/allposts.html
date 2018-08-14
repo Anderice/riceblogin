@@ -1,0 +1,21 @@
+<h1>所有的文章</h1>
+<div class="all-posts">
+{% for post in site.posts %}
+<figure class="post">
+  <img src="{{ baseurl }}{{ post.image }}" alt="">
+  <div class="post-content">
+    <figcaption class="post-title">{{ post.title }}</figcaption>
+    <div class="post-content-detail">
+      <i class="far fa-calendar-alt fa-lg"></i>
+      <hr class="hr-vertical hr-heavy">
+      <time>{{ post.date | date_to_string }}</time>
+      <br>
+      <i class="fas fa-tags fa-lg"></i><p>{{ post.tags }}</p>
+      <hr class="hr-vertical hr-heavy">
+    </div>
+<p>{{ post.description }}</p>
+  </div>
+</figure>
+
+{% endfor %}
+</div>
