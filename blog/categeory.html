@@ -1,8 +1,7 @@
 ---
 layout: default
 title: 文章分類
-description: test
-test: "testing"
+description: 這裡存放各種文檔的分類
 permalink: /categeory/
 ---
 <div class="home-wrap">
@@ -14,13 +13,14 @@ permalink: /categeory/
 		<div class="content-wrap">
 			<h1>檔案分類</h1>
 			<hr class="hr-heavy float-left">
+
 			<div id="archives">
 			{% for category in site.categories %}
 			  <div class="archive-group">
 			    {% capture category_name %}{{ category | first }}{% endcapture %}
 			    <div id="#{{ category_name | slugize }}"></div>
 			    <p></p>
-			    <h2 class="category-head">{{ category_name }}</h2>
+			    <h2 id="{{category_name}}" class="category-head">{{ category_name }}</h2>
 					    <a name="{{ category_name | slugize }}"></a>
 			    {% for post in site.categories[category_name] %}
 			    <article class="archive-item">

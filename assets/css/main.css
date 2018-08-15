@@ -455,6 +455,7 @@ span {
   border-radius: 50%; }
 
 .person-content {
+  margin: 0 1.5rem;
   text-align: center;
   max-width: 200px; }
   .person-content p {
@@ -526,11 +527,16 @@ span {
         align-items: center; } }
 
 .home-hero {
-  background: url("https://picsum.photos/g/1920/1080"); }
-  .home-hero h1 {
-    text-align: center;
-    font-size: 4rem;
-    margin: 0; }
+  background: url("https://picsum.photos/g/1920/1080");
+  text-align: center; }
+
+.hero-title {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0; }
+
+.hero-subtitle {
+  max-width: 80%; }
 
 .artical-sections {
   color: #EFEFEF;
