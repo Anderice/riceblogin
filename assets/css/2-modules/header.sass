@@ -46,6 +46,48 @@ span
         color: $dark
         text-decoration: none
 
+.mobile-nav-toggle
+  position: fixed
+  top: 30px
+  left: 30px
+  width: 40px
+  height: 40px
+  background: pink
+  display: none
+
+
+  cursor: pointer
+
+
+  span,
+  span::before,
+  span::after
+    content: ''
+    display: block
+    position: relative
+    display: block
+    height: 3px
+    background-color: $dark
+    transition: all 0.3s
+
+  span::before
+    top: 15px
+
+  span::after
+    bottom: 17px
+
+  &:hover span
+    background: transparent
+
+  &:hover span::before,
+  &:hover span::after
+    transform-origin: center
+    transform: rotate(45deg)
+    top: 0
+
+  &:hover span::before
+    transform: rotate(-45deg)
+
 .nav-item
   padding: 1rem 0
   transition: 0.3s
@@ -54,10 +96,6 @@ span
   &:hover
     background-color: $main
 
-
-
-
-
 @media (max-width: 1000px)
   .home-wrap header
     min-width: 0
@@ -65,3 +103,7 @@ span
     .header-position
       width: 0
       left: -200px
+
+  .mobile-nav-toggle
+    display: flex
+    align-items: center
