@@ -13,7 +13,18 @@
 	</head>
 <body>
 
-{{ content }}
+
+	<div class="home-wrap">
+	  {% include header.html %}
+	  <div class="home-sections">
+	      {% include hero.html %}
+	      <div class="content-wrap">
+					{{ content }}
+	      </div>
+	    {% include footer.html %}
+	  </div>
+	</div>
+
 
 </body>
 	<script src="{{ site.baseurl }}/assets/js/main.js"></script>

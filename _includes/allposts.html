@@ -1,5 +1,8 @@
 {% if {{page.title}} == "首頁" %}
-  <h1>首頁特有文字</h1>
+
+  <h1><i class="far fa-newspaper"></i>全部文章-{{ paginator.total_posts }}篇</h1>
+  <p>這裡你可以找到所有寫過的文章，依照新到舊排序</p>
+
 {% endif %}
 
 <!-- posts -->
@@ -16,7 +19,18 @@
               <hr class="hr-vertical hr-heavy">
               <time class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</time>
               <br>
-              <i class="fas fa-tags fa-lg"></i><p>{{ post.tags }}</p>
+              <i class="fas fa-tags fa-lg"></i>
+
+              <!-- {
+                  "tags": [
+                      {% for tag in site.tags %}
+                        "{{ tag | first }}"{% unless forloop.last %},{% endunless %}
+
+                      {% endfor %}
+                  ]
+              } -->
+
+              </p>
               <hr class="hr-vertical hr-heavy">
             </div>
             <p>{{ post.description }}</p>
@@ -26,26 +40,54 @@
 </div>
 
 
-<!-- next_page, previous_page buttons -->
+<!--
 <div class="paginate">
+
   {% if paginator.total_pages > 1 %}
 
-  {% if paginator.previous_page %}
-    <a class="paginate-button" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">上一頁</a>
-  {% endif %}
+    {% if paginator.first_page %}
+       <a class="paginate-button" href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}">第一頁</a>
+   {% endif %}
 
-  {% if paginator.page_trail %}
-    {% for trail in paginator.page_trail %}
-      <div class="paginate-button" {% if page.url == trail.path %}class="selected"{% endif %}>
-          <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
-      </div>
-    {% endfor %}
+    {% if paginator.previous_page %}
+      <a class="paginate-button" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">上一頁</a>
+    {% endif %}
+
+    {% if paginator.page_trail %}
+      {% for trail in paginator.page_trail %}
+
+        <div class=" {% if page.url == trail.path %}selected{% endif %} paginate-button">
+            <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+        </div>
+
+      {% endfor %}
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <a class="paginate-button" href="{{ paginator.next_page_path | prepend: site.baseurl }}">下一頁</a>
+    {% endif %}
+
+    {% if paginator.last_page %}
+
+   <a class="paginate-button" href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}">最後一頁</a>
+
+    {% endif %}
+
   {% endif %}
+</div> -->
 
 
-  {% if paginator.next_page %}
-    <a class="paginate-button" href="{{ paginator.next_page_path | prepend: site.baseurl }}">下一頁</a>
-  {% endif %}
-  </ul>
-  {% endif %}
-</div>
+<!--
+    Here is the main paginator logic called.
+    All calls to site.posts should be replaced by paginator.posts
+-->
+
+<!-- {% for post in paginator.posts %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.book.rank %} | Rank: {{ post.book.rank }}{% endif %}{% if post.collection %} | {{ post.collection }}{% endif %}{% if post.tags %}<br>Tags: {{ post.tags }}{% endif %}</span>
+    <h2>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h2>
+  </li>
+{% endfor %}
+</ul> -->

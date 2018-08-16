@@ -318,13 +318,42 @@ hr {
 
 .hr-space {
   width: 100%;
-  margin: 3rem 0; }
+  margin: 1rem 0; }
 
 .float-left {
   float: left; }
 
 i {
+  margin: 0 1rem;
   vertical-align: middle; }
+
+.italic {
+  font-style: italic; }
+
+.comment {
+  color: gray; }
+
+.underline::after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 20px;
+  background: #423964; }
+
+.post-content img {
+  max-width: 300px; }
+
+.author {
+  font-size: 2rem; }
+
+.footer-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  background-color: #423964;
+  color: #EFEFEF; }
 
 .archive-group {
   padding: 3rem; }
@@ -372,16 +401,15 @@ i {
 .all-posts {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: baseline;
-      align-items: baseline;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.post:nth-of-type(1) {
-  width: 100%; }
-
 .post {
-  width: 400px;
+  max-width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -400,7 +428,7 @@ i {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); }
   .post > img {
     transition: 0.3s;
-    height: 300px;
+    max-height: 300px;
     float: left;
     object-fit: cover;
     -webkit-filter: blur(1px);
@@ -431,7 +459,7 @@ i {
       justify-content: center; }
 
 .paginate-button {
-  border: 2px solid #423964;
+  border: 1px solid #423964;
   padding: 0.8rem 1.3rem;
   margin: 2rem 0.5rem;
   text-decoration: none;
@@ -439,12 +467,25 @@ i {
   transition: 0.3s;
   cursor: pointer; }
   .paginate-button:hover {
-    background-color: #F3EDDF;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    background-color: #EFCC77;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); }
   .paginate-button > a {
     text-decoration: none; }
+
+.selected {
+  background: #423964; }
+  .selected > a {
+    color: #F3EDDF;
+    font-weight: bold; }
+  .selected:hover {
+    background-color: #423964; }
+    .selected:hover > a {
+      color: #EFCC77; }
+
+@media (max-width: 1000px) {
+  .post {
+    margin: 3rem;
+    max-width: 100%; } }
 
 .btn {
   text-decoration: none;
@@ -490,14 +531,14 @@ span {
     letter-spacing: 2px;
     color: #EFEFEF; }
 
-.person-thumbnail {
-  border-radius: 50%; }
-
 .person-content {
   margin: 0 1.5rem;
   text-align: center;
   max-width: 200px; }
-  .person-content p {
+
+.person-thumbnail {
+  border-radius: 50%; }
+  .person-thumbnail p {
     text-align: left; }
 
 .site-nav {
@@ -620,13 +661,17 @@ span {
 .hero-subtitle {
   max-width: 80%; }
 
+.artical-section-heading {
+  text-align: center; }
+
 .artical-sections {
+  width: 100%;
   color: #EFEFEF;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 6rem 0; }
+  margin: 0rem 0 6rem; }
 
 .artical {
   display: -ms-flexbox;
@@ -645,22 +690,11 @@ span {
   opacity: 0.8;
   overflow: hidden;
   transition: 0.3s; }
-  .artical > img {
-    z-index: -1;
-    height: 100%;
-    width: 100%; }
-  .artical:nth-of-type(2) {
-    background: url("https://picsum.photos/1920/1080/?random"); }
-  .artical:nth-of-type(3) {
-    background: url("https://picsum.photos/1920/1080/?random"); }
-  .artical:nth-of-type(4) {
-    background: url("https://picsum.photos/1920/1080/?random"); }
-  .artical:nth-of-type(5) {
-    background: url("https://picsum.photos/1920/1080/?random"); }
-  .artical:nth-of-type(6) {
-    background-color: #EFCC77; }
   .artical:hover {
     opacity: 1; }
+  .artical > img {
+    object-fit: cover;
+    max-width: 100%; }
   .artical:hover > div {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -688,6 +722,10 @@ span {
     margin: 0; }
   .artical-content > p {
     margin: 0; }
+  @media (max-width: 1000px) {
+    .artical-content .artical-sections {
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
 section {
   position: relative;
@@ -761,6 +799,10 @@ section:nth-of-type(1) {
 
 .content-wrap {
   margin: 6rem; }
+
+@media (max-width: 1000px) {
+  .content-wrap {
+    margin: 3rem; } }
 
 html {
   box-sizing: border-box; }

@@ -5,29 +5,17 @@ pagination:
   trail:
   before: 1 # The number of links before the current page
   after: 1  # The number of links after the current page
-
   enabled: true
+
 
 title: 首頁
 description: "安安你好，這裡是部落格首頁"
 
 
 ---
-<div class="home-wrap">
-	{% include header.html %}
-<!-- Right side MAIN area in blog -->
-	<div class="home-sections">
-		{% include hero.html %}
-<!-- Content below the hero section -->
-		<div class="content-wrap">
-
 			{% include allposts.html %}
 
-
+      <!-- Add artical-categeory section if title is Mainpage -->
       {% if {{page.title}} == "首頁" %}
-  			{% include artical-sections.html %}
+        {% include artical-sections.html %}
       {% endif %}
-
-		</div>
-	</div>
-</div>

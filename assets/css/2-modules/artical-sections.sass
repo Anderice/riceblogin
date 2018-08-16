@@ -1,9 +1,12 @@
+.artical-section-heading
+  text-align: center
 
 .artical-sections
+  width: 100%
   color: $light
   display: flex
   flex-wrap: wrap
-  margin: 6rem 0
+  margin: 0rem 0 6rem
 
 .artical
   display: flex
@@ -23,40 +26,19 @@
   overflow: hidden
   transition: 0.3s
 
-  & > img
-    z-index: -1
-    height: 100%
-    width: 100%
-
-
-
-  &:nth-of-type(2)
-    background: url("https://picsum.photos/1920/1080/?random")
-
-  &:nth-of-type(3)
-    background: url("https://picsum.photos/1920/1080/?random")
-
-  &:nth-of-type(4)
-    background: url("https://picsum.photos/1920/1080/?random")
-
-  &:nth-of-type(5)
-    background: url("https://picsum.photos/1920/1080/?random")
-
-  &:nth-of-type(6)
-    background-color: $main
-
   &:hover
-
     opacity: 1
+
+  & > img
+    object-fit: cover
+    max-width: 100%
+
 
   &:hover > div
     transform: scale(1.1)
     width: 100%
     height: 100%
     opacity: 0.9
-
-
-
 
 .artical-content
   display: flex
@@ -76,3 +58,7 @@
     margin: 0
   & > p
     margin: 0
+
+  @media (max-width: 1000px)
+    .artical-sections
+      justify-content: center
