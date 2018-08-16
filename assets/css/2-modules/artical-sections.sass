@@ -6,20 +6,29 @@
   margin: 6rem 0
 
 .artical
-  position: relative
-  height: 250px
+  display: flex
+  justify-content: center
+
   flex: 1 0 3.3333%
   flex-basis: 300px
+
+  position: relative
+  height: 250px
   margin: auto 0
   text-align: center
-  overflow: hidden
+
   outline: 10px solid $light
-  opacity: 0.7
+  opacity: 0.8
+
+  overflow: hidden
   transition: 0.3s
 
+  & > img
+    z-index: -1
+    height: 100%
+    width: 100%
 
-  &:nth-of-type(1)
-    background: url("https://picsum.photos/1920/1080/?random")
+
 
   &:nth-of-type(2)
     background: url("https://picsum.photos/1920/1080/?random")
@@ -37,6 +46,7 @@
     background-color: $main
 
   &:hover
+
     opacity: 1
 
   &:hover > div
@@ -45,19 +55,24 @@
     height: 100%
     opacity: 0.9
 
+
+
+
 .artical-content
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
   position: absolute
   width: 100%
   height: 0
   opacity: 0
+  background-color: $heavy-gray
+  transition: 0.5s
 
   & > h2
     color: $main
     margin: 0
   & > p
-    margin: 2rem 0 0
-
-
-
-  background-color: $dark
-  transition: 0.5s
+    margin: 0

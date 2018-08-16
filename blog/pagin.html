@@ -1,0 +1,24 @@
+---
+layout: page
+pagination:
+  enabled: true
+
+permalink: /pagin/
+---
+
+{% for post in paginator.posts %}
+  <h1>{{ post.title }}</h1>
+{% endfor %}
+
+
+
+{% for post in paginator.posts %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+    <h2>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h2>
+  </li>
+{% endfor %}
+</ul>

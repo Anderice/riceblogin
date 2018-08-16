@@ -3,6 +3,9 @@
   background: $light
 
 .header-position
+  // nav-setting hight value
+  z-index: 1
+
   background: $light-2
   position: fixed
   top: 0
@@ -40,6 +43,7 @@ span
   width: 100%
 
   ul
+    margin: 0
     padding: 0
     list-style-type: none
     li
@@ -48,17 +52,15 @@ span
         text-decoration: none
 
 .mobile-nav-toggle
+  z-index: 2
+
   position: fixed
   top: 30px
-  left: 30px
+  right: 30px
   width: 40px
   height: 40px
-  background: pink
   display: none
-
-
   cursor: pointer
-
 
   span,
   span::before,
@@ -97,7 +99,14 @@ span
   &:hover
     background-color: $main
 
+
+
+
+
 @media (max-width: 1000px)
+  html
+    font-size: 12px
+
   .home-wrap header
     min-width: 0
 
@@ -108,3 +117,45 @@ span
   .mobile-nav-toggle
     display: flex
     align-items: center
+
+
+
+
+
+  .mobile-nav-panel
+    transition: 0.3s
+    z-index: 3
+    position: fixed
+    top: 0
+    left: -100px
+    height: 100%
+    width: 0
+    background: $heavy-gray
+
+  .nav-panel-content
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+    text-align: center
+
+    &>div
+      color: $light
+      margin: 1rem 3rem
+      padding: 2rem
+      width: 100%
+      max-height: 300px
+      &>img
+
+      &>h1
+        line-height: 0.2
+
+  .color-light
+    ul > li > a
+      color: $light-2
+
+    ul > li:hover > a
+      color: $dark
+      font-weight: bold

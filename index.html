@@ -1,7 +1,17 @@
 ---
 layout: default
-title: Rice部落格
+
+pagination:
+  trail:
+  before: 1 # The number of links before the current page
+  after: 1  # The number of links after the current page
+
+  enabled: true
+
+title: 首頁
 description: "安安你好，這裡是部落格首頁"
+
+
 ---
 <div class="home-wrap">
 	{% include header.html %}
@@ -10,13 +20,13 @@ description: "安安你好，這裡是部落格首頁"
 		{% include hero.html %}
 <!-- Content below the hero section -->
 		<div class="content-wrap">
-			<h1>這是初始文章</h1>
-			<p>原本常用網名是Anderice，但連自己都不會念就被簡化為Rice了</p>
-
-			{% include artical-sections.html %}
-			<hr class="hr-heavy">
 
 			{% include allposts.html %}
+
+
+      {% if {{page.title}} == "首頁" %}
+  			{% include artical-sections.html %}
+      {% endif %}
 
 		</div>
 	</div>
