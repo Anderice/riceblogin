@@ -4,7 +4,16 @@
 	<link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>{{ page.title }}</title>
+	<title>
+		{% if page.title %}
+			{{page.title}}
+			{% endif %}
+			•Rice的部落格
+		{% if page.titleAfter %}
+		•{{page.titleAfter}}
+		{% endif %}
+
+	</title>
 	<meta name="viewport" content="width=device-width">
 
 	<!-- Custom CSS -->
@@ -15,7 +24,6 @@
 	</head>
 <body>
 
-{% include base.html %}
 <!-- Make content float left and set height to 100vh -->
 	<div class="home-wrap">
 	  {% include header.html %}

@@ -25,3 +25,14 @@ $main: #EFCC77
 
 @mixin box-shadow-active
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2)
+
+$medium: 1200px
+$small: 500px
+
+@mixin medium-size()
+  @media (max-width: $medium)
+    @content
+
+@mixin small-size()
+  @media (max-width: $small)
+    @content
