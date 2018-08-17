@@ -1,14 +1,13 @@
 <header>
   <div class="header-position">
-    <span>
+    <span class="page-location">
       <h1>{{page.title}}</h1>
-
     </span>
     <div class="person-content">
-      <img class="person-thumbnail" src="https://picsum.photos/g/100/100" alt="">
-        <p class="comment">創作者</p>
+      <img class="person-thumbnail" src="{{base}}/assets/img/basic/thumbnail.jpg" alt="My personal thumbnail image">
         <h1>RICE</h1>
-        <p>這裡是我簡短的敘述</p>
+        <p class="comment">創作者</p>
+        <p class="person-description">簡短的敘述</p>
         <!-- <hr class="hr-space hr-light">
         <i class="fas fa-map-marker-alt"></i>台灣／台中市<br>
         <i class="fas fa-map-marker-alt"></i>bottle200918@gmail.com -->
@@ -16,9 +15,10 @@
     </div>
     <nav class="site-nav">
       <ul>
-        <li class="nav-item"><a href="{{ site.baseurl }}/index.html">首頁</a></li>
-        <li class="nav-item"><a href="{{ site.baseurl }}/intro">關於這裡</a></li>
-        <li class="nav-item"><a href="{{ site.baseurl }}/categeory">文章分類</a></li>
+        <link href='{{ 'assets/css/main.css' | relative_url }}' rel='stylesheet'>
+        <li class="nav-item"><a href="{{base}}">首頁</a></li>
+        <li class="nav-item"><a href="{{base}}/intro/">關於這裡</a></li>
+        <li class="nav-item"><a href="{{base}}/categeory/">文章分類</a></li>
       </ul>
     </nav>
   </div>
@@ -28,7 +28,7 @@
     <span></span>
   </div>
 <!-- nav panel for mobile  -->
-<div class="mobile-nav-panel" id="mobile-nav">
+<div class="mobile-nav-panel" id="mobile-nav" onclick="mobiletoggleOFF()">
   <div class="nav-panel-content">
     <span>
       <h1>{{page.title}}</h1>
@@ -39,7 +39,6 @@
           <p>創作者</p>
           <h1>RICE</h1>
           <p>這裡是我簡短的敘述</p>
-
     </div>
 
     <nav class="site-nav color-light">

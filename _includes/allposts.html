@@ -1,25 +1,27 @@
-{% if {{page.title}} == "首頁" %}
-
-  <h1><i class="far fa-newspaper"></i>全部文章-{{ paginator.total_posts }}篇</h1>
-  <p>這裡你可以找到所有寫過的文章，依照新到舊排序</p>
-
-{% endif %}
 
 <!-- posts -->
+  <h1 id="all-posts" class="title">所有文章</h1>
 <div class="all-posts">
-
-
     {% for post in paginator.posts %}
       <figure class="post">
         <img src="{{ baseurl }}{{ post.image }}" alt="">
           <div class="post-content">
             <figcaption class="post-title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></figcaption>
-            <div class="post-content-detail">
+            <div class="post-content-meta">
+
               <i class="far fa-calendar-alt fa-lg"></i>
-              <hr class="hr-vertical hr-heavy">
-              <time class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</time>
-              <br>
+              日期：
+              <time>{{ post.date | date: "%Y, %b %-d" }}</time>
+            </div>
+
+            <div class="post-content-meta">
               <i class="fas fa-tags fa-lg"></i>
+              標籤：
+
+            </div>
+
+          
+
 
               <!-- {
                   "tags": [
@@ -30,9 +32,6 @@
                   ]
               } -->
 
-              </p>
-              <hr class="hr-vertical hr-heavy">
-            </div>
             <p>{{ post.description }}</p>
           </div>
       </figure>
@@ -40,7 +39,7 @@
 </div>
 
 
-<!--
+
 <div class="paginate">
 
   {% if paginator.total_pages > 1 %}
@@ -74,7 +73,7 @@
     {% endif %}
 
   {% endif %}
-</div> -->
+</div>
 
 
 <!--

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -330,8 +332,11 @@ i {
 .italic {
   font-style: italic; }
 
+.title {
+  font-size: 3rem; }
+
 .comment {
-  color: gray; }
+  color: lightgray; }
 
 .underline::after {
   content: '';
@@ -339,6 +344,49 @@ i {
   height: 5px;
   width: 20px;
   background: #423964; }
+
+.info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.info-box {
+  text-align: center;
+  border-radius: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  vertical-align: baseline;
+  background-color: #423964;
+  color: #EFEFEF;
+  margin: 2rem;
+  padding: 2rem; }
+  .info-box > h1 {
+    margin-bottom: 0; }
+
+.info-content {
+  margin: 0; }
+
+.artical-counter {
+  color: #EFCC77;
+  text-decoration: none;
+  font-size: 3.5rem; }
+
+.all-posts {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .post-content img {
   max-width: 300px; }
@@ -398,16 +446,6 @@ i {
   color: #423964;
   text-decoration: none; }
 
-.all-posts {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
 .post {
   max-width: 100%;
   display: -ms-flexbox;
@@ -442,8 +480,14 @@ i {
   .post-content > li {
     list-style-type: none; }
 
-.post-content-detail {
-  font-size: 1.1rem; }
+.post-content-meta {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 1rem 0; }
 
 .post-title {
   font-size: 3rem; }
@@ -507,7 +551,7 @@ i {
 
 .header-position {
   z-index: 1;
-  background: #F3EDDF;
+  background: #141023;
   position: fixed;
   top: 0;
   left: 0;
@@ -522,24 +566,30 @@ i {
   -ms-flex-align: center;
       align-items: center; }
 
-span {
+.page-location {
   font-size: 0.5rem;
   text-align: center;
-  background-color: #423964;
-  width: 100%; }
-  span > h1 {
+  width: 100%;
+  border-top: 8px solid #423964; }
+  .page-location > h1 {
     letter-spacing: 2px;
     color: #EFEFEF; }
 
 .person-content {
   margin: 0 1.5rem;
-  text-align: center;
+  text-align: left;
   max-width: 200px; }
+  .person-content > * {
+    margin: 0.5rem 0; }
+  .person-content > h1 {
+    color: #EFEFEF;
+    font-size: 2.5rem; }
 
 .person-thumbnail {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
   border-radius: 50%; }
-  .person-thumbnail p {
-    text-align: left; }
 
 .site-nav {
   text-align: center;
@@ -549,8 +599,18 @@ span {
     padding: 0;
     list-style-type: none; }
     .site-nav ul li a {
-      color: #423964;
+      color: #EFEFEF;
       text-decoration: none; }
+
+.nav-item {
+  padding: 1rem 0;
+  transition: 0.3s;
+  width: 100%; }
+  .nav-item:hover {
+    background-color: #EFCC77; }
+    .nav-item:hover > a {
+      font-weight: bold;
+      color: #423964; }
 
 .mobile-nav-toggle {
   z-index: 2;
@@ -588,14 +648,7 @@ span {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
 
-.nav-item {
-  padding: 1rem 0;
-  transition: 0.3s;
-  width: 100%; }
-  .nav-item:hover {
-    background-color: #EFCC77; }
-
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
   html {
     font-size: 12px; }
   .home-wrap header {
@@ -612,7 +665,7 @@ span {
     transition: 0.3s;
     z-index: 3;
     position: fixed;
-    top: 0;
+    top: -300px;
     left: -100px;
     height: 100%;
     width: 0;
@@ -727,7 +780,7 @@ span {
       -ms-flex-pack: center;
           justify-content: center; } }
 
-section {
+.intro-section {
   position: relative;
   width: 100%;
   height: 120vh;
@@ -741,18 +794,19 @@ section {
       justify-content: center;
   -ms-flex-direction: column;
       flex-direction: column; }
-  section .box {
-    box-shadow: 0 0 3rem gray;
-    margin-bottom: 5rem;
-    background-color: #EFEFEF;
-    padding: 2rem 5rem;
-    border-radius: 1rem;
-    max-width: 500px;
-    z-index: 1; }
-    section .box img {
-      width: 100px;
-      height: auto;
-      border-radius: 50%; }
+
+.box {
+  box-shadow: 0 0 3rem gray;
+  margin-bottom: 5rem;
+  background-color: #EFEFEF;
+  padding: 2rem 5rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  z-index: 1; }
+  .box img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%; }
 
 .links > ul {
   display: -ms-flexbox;
@@ -770,12 +824,7 @@ section {
 .container {
   width: 70%;
   max-width: 1000px;
-  margin: auto;
-  background: red; }
-
-section:nth-of-type(1) {
-  background: url("https://picsum.photos/g/1920/1080") no-repeat center fixed;
-  background-size: cover; }
+  margin: auto; }
 
 .home-wrap {
   display: -ms-flexbox;
@@ -805,6 +854,7 @@ section:nth-of-type(1) {
     margin: 3rem; } }
 
 html {
+  font-family: 'Noto Sans TC',"微軟正黑體" , sans-serif;
   box-sizing: border-box; }
 
 *, *:before, *:after {

@@ -1,8 +1,13 @@
 <div class="home-hero">
+  <!-- If the page is index then display... -->
   {% if page.title =="首頁" %}
+    <h1 class="hero-title">首頁</h1>
+    <p class="hero-subtitle">歡迎來到我的部落格。<br>擁有一個部落格就像在網路世界中有一片屬於自己的一片天地第一般，
+  <!-- If the page is index then display... -->
+  {% elsif page.title contains 'page' %}
+    <h1 class="hero-title">{{page.title}}</h1>
+  {% else %}
+    <h1 class="hero-title">{{ page.title }}</h1>
+    <p class="hero-subtitle">{{ page.description }}</p>
   {% endif %}
-  <h1 class="hero-title">{{ page.title }}</h1>
-
-  <p class="hero-subtitle">{{ page.description }}</p>
-
 </div>

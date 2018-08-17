@@ -7,15 +7,15 @@ pagination:
   after: 1  # The number of links after the current page
   enabled: true
 
-
 title: 首頁
 description: "安安你好，這裡是部落格首頁"
 
 
 ---
-			{% include allposts.html %}
+{% include pageinfo.html %}
+{% include allposts.html %}
 
-      <!-- Add artical-categeory section if title is Mainpage -->
-      {% if {{page.title}} == "首頁" %}
-        {% include artical-sections.html %}
-      {% endif %}
+<!-- Add artical-categeory section if title is Mainpage -->
+{% if {{page.title}} == "首頁" %}
+  {% include artical-sections.html %}
+{% endif %}

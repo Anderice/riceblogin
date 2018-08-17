@@ -9,23 +9,28 @@
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/main.css">
+
+
+	<link href='{{base}}/assets/css/main.css' rel='stylesheet'>
+
 	</head>
 <body>
 
-
+{% include base.html %}
+<!-- Make content float left and set height to 100vh -->
 	<div class="home-wrap">
 	  {% include header.html %}
+<!-- Make Right section centered and fullwidth -->
 	  <div class="home-sections">
 	      {% include hero.html %}
-	      <div class="content-wrap">
+<!-- Add margin to main area -->
+	      <main class="content-wrap">
 					{{ content }}
-	      </div>
+	      </main>
 	    {% include footer.html %}
 	  </div>
 	</div>
 
-
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
 </body>
-	<script src="{{ site.baseurl }}/assets/js/main.js"></script>
 </html>

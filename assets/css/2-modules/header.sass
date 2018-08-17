@@ -1,12 +1,13 @@
+// header base
 .home-wrap header
   min-width: 20vw
   background: $light
 
+// header fixed style
 .header-position
-  // nav-setting hight value
   z-index: 1
 
-  background: $light-2
+  background: $dark-2
   position: fixed
   top: 0
   left: 0
@@ -17,11 +18,12 @@
   width: 20vw
   align-items: center
 
-span
+// Directory section
+.page-location
   font-size: 0.5rem
   text-align: center
-  background-color: $dark
   width: 100%
+  border-top: 8px solid $dark
 
   &>h1
     letter-spacing: 2px
@@ -29,15 +31,27 @@ span
 
 .person-content
   margin: 0 1.5rem
-  text-align: center
+  text-align: left
   max-width: 200px
 
+  & > *
+    margin: 0.5rem 0
+
+  // person name
+  & > h1
+    color: $light
+    font-size: 2.5rem
+
+.person-description
+
+
 .person-thumbnail
+  width: 130px
+  height: 130px
+  object-fit: cover
   border-radius: 50%
 
-  p
-    text-align: left
-
+// header navgation
 .site-nav
   text-align: center
   width: 100%
@@ -46,10 +60,23 @@ span
     margin: 0
     padding: 0
     list-style-type: none
+
     li
       a
-        color: $dark
+        color: $light
         text-decoration: none
+
+.nav-item
+  padding: 1rem 0
+  transition: 0.3s
+  width: 100%
+
+  &:hover
+    background-color: $main
+
+    & > a
+      font-weight: bold
+      color: $dark
 
 .mobile-nav-toggle
   z-index: 2
@@ -91,19 +118,8 @@ span
   &:hover span::before
     transform: rotate(-45deg)
 
-.nav-item
-  padding: 1rem 0
-  transition: 0.3s
-  width: 100%
 
-  &:hover
-    background-color: $main
-
-
-
-
-
-@media (max-width: 1000px)
+@media (max-width: 950px)
   html
     font-size: 12px
 
@@ -122,7 +138,7 @@ span
     transition: 0.3s
     z-index: 3
     position: fixed
-    top: 0
+    top: -300px
     left: -100px
     height: 100%
     width: 0
@@ -138,11 +154,13 @@ span
     text-align: center
 
     &>div
+
       color: $light
       margin: 1rem 3rem
       padding: 2rem
       width: 100%
       max-height: 300px
+
       &>img
 
       &>h1
