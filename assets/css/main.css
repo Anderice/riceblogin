@@ -373,6 +373,8 @@ i {
 
 .info-content {
   margin: 0; }
+  .info-content > ul {
+    padding: 0; }
 
 .artical-counter {
   color: #EFCC77;
@@ -532,7 +534,7 @@ i {
     .selected:hover > a {
       color: #EFCC77; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .post {
     margin: 3rem;
     max-width: 100%; } }
@@ -655,7 +657,7 @@ i {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   html {
     font-size: 12px; }
   .home-wrap header {
@@ -783,10 +785,14 @@ i {
   .artical-content > p {
     margin: 0; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .artical-sections {
     -ms-flex-pack: center;
-        justify-content: center; } }
+        justify-content: center; }
+  .artical {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
 
 .intro-section {
   position: relative;
@@ -857,13 +863,13 @@ i {
 .content-wrap {
   margin: 6rem; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .content-wrap {
     margin: 3rem; } }
 
 @media (max-width: 500px) {
   .content-wrap {
-    margin: 0; } }
+    margin: 3rem; } }
 
 html {
   font-family: 'Noto Sans TC',"微軟正黑體" , sans-serif;
