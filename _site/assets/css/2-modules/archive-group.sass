@@ -1,0 +1,50 @@
+
+.archive-group
+  padding: 3rem
+
+  // main bubble
+  &>h2
+    position: relative
+    padding: 1rem
+    border-radius: 100%
+    font-size: 2rem
+    background: $main
+    padding: 0 1rem
+    max-width: 50px
+
+  // sub bubble
+  &>h2::before
+    content: ''
+    display: block
+
+    position: absolute
+    top: -5px
+    left: -20px
+    border-radius: 10px
+    width: 10px
+    height: 10px
+    background: $main
+
+.archive-item
+    padding: 1.5rem
+    transition: 0.3s
+    @include clearfix
+
+    // add color bg when hover
+    &:hover
+      border-radius: 10px
+      background: $main
+
+    img
+      border-radius: 5px
+      margin-right: 2rem
+      max-width: 300px
+      max-height: auto
+      float: left
+
+.archive-link
+  font-size: 2rem
+  color: $dark
+  text-decoration: none
+
+.archive-description

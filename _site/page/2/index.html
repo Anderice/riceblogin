@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>
+		
+			首頁 - page 2
+			
+			•Rice的部落格
+		
+		•個人網站的副標題
+		
+
+	</title>
+	<meta name="viewport" content="width=device-width">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="/riceblogin/assets/css/main.css"/>
+
+
+	</head>
+<body>
+
+<!-- Make content float left and set height to 100vh -->
+	<div class="home-wrap">
+	  <header>
+  <div class="header-position">
+    <span class="page-location">
+      <h1>首頁 - page 2</h1>
+    </span>
+    <div class="person-content">
+      <img class="person-thumbnail" src="/riceblogin/assets/img/basic/thumbnail.jpg" alt="My personal thumbnail image">
+        <h1>RICE</h1>
+        <p class="comment">創作者</p>
+        <p class="person-description">簡短的敘述</p>
+        <!-- <hr class="hr-space hr-light">
+        <i class="fas fa-map-marker-alt"></i>台灣／台中市<br>
+        <i class="fas fa-map-marker-alt"></i>bottle200918@gmail.com -->
+
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li class="nav-item"><a href="/riceblogin/">首頁</a></li>
+        <li class="nav-item"><a href="/riceblogin/intro/">關於這裡</a></li>
+        <li class="nav-item"><a href="/riceblogin/categeory/">文章分類</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<!-- nav toggle -->
+  <div class="mobile-nav-toggle" onclick="mobiletoggle()">
+    <span></span>
+  </div>
+<!-- nav panel for mobile  -->
+<div class="mobile-nav-panel" id="mobile-nav" onclick="mobiletoggleOFF()">
+  <div class="nav-panel-content">
+    <span>
+      <h1>首頁 - page 2</h1>
+    </span>
+
+    <div>
+      <img class="person-thumbnail" src="https://picsum.photos/g/100/100" alt="">
+          <p>創作者</p>
+          <h1>RICE</h1>
+          <p>這裡是我簡短的敘述</p>
+    </div>
+
+    <nav class="site-nav color-light">
+      <ul>
+        <li class="nav-item"><a href="/riceblogin/index.html">首頁</a></li>
+        <li class="nav-item"><a href="/riceblogin/intro">關於這裡</a></li>
+        <li class="nav-item"><a href="/riceblogin/categeory">文章分類</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+</header>
+
+<!-- Make Right section centered and fullwidth -->
+	  <div class="home-sections">
+	      <div class="home-hero">
+  <!-- If the page is index then display... -->
+  
+    <h1 class="hero-title">首頁 - page 2</h1>
+  
+</div>
+
+<!-- Add margin to main area -->
+	      <main class="content-wrap">
+
+					<section class="info">
+
+  
+</section>
+
+
+<!-- posts -->
+  <h1 id="all-posts" class="title">所有文章</h1>
+<div class="all-posts">
+    
+      <figure class="post">
+        <img src="https://i.imgur.com/hgaNulR.jpg" alt="">
+          <div class="post-content">
+            <figcaption class="post-title"><a class="post-link" href="/riceblogin/note/2018/08/11/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%94.html">測試文章五</a></figcaption>
+            <div class="post-content-meta">
+
+              <i class="far fa-calendar-alt fa-lg"></i>
+              日期：
+              <time>2018, Aug 11</time>
+            </div>
+
+            <div class="post-content-meta">
+              <i class="fas fa-tags fa-lg"></i>
+              標籤：
+
+            </div>
+
+          
+
+
+              <!-- {
+                  "tags": [
+                      
+                        "good",
+
+                      
+                        "four",
+
+                      
+                        "cool"
+
+                      
+                  ]
+              } -->
+
+            <p>artical 5。</p>
+          </div>
+      </figure>
+    
+</div>
+
+
+
+<div class="paginate">
+
+  
+
+    
+       <a class="paginate-button" href="/riceblogin/index.html">第一頁</a>
+   
+
+    
+      <a class="paginate-button" href="/riceblogin/index.html">上一頁</a>
+    
+
+    
+      
+
+        <div class="  paginate-button">
+            <a href="/riceblogin/index.html" title="首頁">1</a>
+        </div>
+
+      
+
+        <div class=" selected paginate-button">
+            <a href="/riceblogin/page/2/index.html" title="首頁 - page 2">2</a>
+        </div>
+
+      
+    
+
+    
+
+    
+
+   <a class="paginate-button" href="/riceblogin/page/2/index.html">最後一頁</a>
+
+    
+
+  
+</div>
+
+
+<!--
+    Here is the main paginator logic called.
+    All calls to site.posts should be replaced by paginator.posts
+-->
+
+<!-- 
+  <li>
+    <span class="post-meta">Aug 11, 2018 | posts<br>Tags: good</span>
+    <h2>
+      <a class="post-link" href="/riceblogin/note/2018/08/11/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%94.html">測試文章五</a>
+    </h2>
+  </li>
+
+</ul> -->
+
+
+<!-- Add artical-categeory section if title is Mainpage -->
+
+
+	      </main>
+	    <footer>
+  <div class="footer-content">
+    <p>All right reserved | 2018/8/16 | Rice</p>
+  </div>
+</footer>
+
+	  </div>
+	</div>
+
+<script src="/riceblogin/assets/js/main.js"></script>
+</body>
+</html>

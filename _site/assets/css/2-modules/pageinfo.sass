@@ -1,0 +1,40 @@
+.info
+  display: flex
+  justify-content: center
+
+.info-box
+  width: 100%
+  text-align: center
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+
+  vertical-align: baseline
+  background-color: $dark
+  color: $light
+  margin: 2rem
+  padding: 2rem
+
+  &>h1
+    margin-bottom: 0
+
+.info-content
+  margin: 0
+
+.artical-counter
+  color: $main
+  text-decoration: none
+
+  font-size: 3.5rem
+
+.all-posts
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-wrap: wrap
+
+@include small-size
+  .info
+    flex-wrap: wrap

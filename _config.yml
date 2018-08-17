@@ -2,7 +2,11 @@ name: TESTING
 # markdown: redcarpet
 exclude: ["node_modules", "gulpfile.js", "package.json","README.md"]
 baseurl: "/riceblogin"
+<<<<<<< HEAD
 # baseurl: "/riceblogin"
+=======
+
+>>>>>>> 9817cbf081e57c85ee3e4a81c3516bb3226ff489
 
 collections:
   cats:

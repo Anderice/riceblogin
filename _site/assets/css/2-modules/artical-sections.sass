@@ -1,0 +1,64 @@
+.artical-section-heading
+  text-align: center
+
+.artical-sections
+  width: 100%
+  color: $light
+  display: flex
+  flex-wrap: wrap
+  margin: 0rem 0 6rem
+
+.artical
+  display: flex
+  justify-content: center
+
+  flex: 1 0 3.3333%
+  flex-basis: 300px
+
+  position: relative
+  height: 250px
+  margin: auto 0
+  text-align: center
+
+  outline: 10px solid $light
+  opacity: 0.8
+
+  overflow: hidden
+  transition: 0.3s
+
+  &:hover
+    opacity: 1
+
+  & > img
+    object-fit: cover
+    max-width: 100%
+
+
+  &:hover > div
+    transform: scale(1.1)
+    width: 100%
+    height: 100%
+    opacity: 0.9
+
+.artical-content
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  position: absolute
+  width: 100%
+  height: 0
+  opacity: 0
+  background-color: $heavy-gray
+  transition: 0.5s
+
+  & > h2
+    color: $main
+    margin: 0
+  & > p
+    margin: 0
+
+@include medium-size
+    .artical-sections
+      justify-content: center
