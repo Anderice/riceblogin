@@ -8,11 +8,9 @@
 	<meta name="viewport" content="width=device-width">
 
 	<!-- Custom CSS -->
-
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"/>
 
-	<!-- {% include_relative assets/css/main.css %} -->
-	<link href='{{base}}assets/css/main.css' rel='stylesheet'>
 
 	</head>
 <body>
@@ -26,6 +24,7 @@
 	      {% include hero.html %}
 <!-- Add margin to main area -->
 	      <main class="content-wrap">
+
 					{{ content }}
 	      </main>
 	    {% include footer.html %}
