@@ -7,19 +7,28 @@
         <img src="{{ baseurl }}{{ post.image }}" alt="">
           <div class="post-content">
             <figcaption class="post-title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></figcaption>
-            <div class="post-content-meta">
-
-              <i class="far fa-calendar-alt fa-lg"></i>
-              日期：
-              <time>{{ post.date | date: "%Y, %b %-d" }}</time>
+            <!-- Post meta section -->
+            <div class="post-content-meta-section">
+              <!-- Post time meta -->
+              <div class="post-content-meta">
+                <i class="far fa-calendar-alt fa-lg"></i>
+                日期：
+                <time>{{ post.date | date: "%Y, %b %-d" }}</time>
+              </div>
+              <hr class="hr-vertical hr-light">
+              <!-- Post Tags meta -->
+              <div class="post-content-meta">
+                <i class="fas fa-tags fa-lg"></i>
+                標籤：
+              </div>
+              <hr class="hr-vertical hr-light">
+              <!-- Post Comments meta -->
+              <div class="post-content-meta">
+                <i class="fas fa-comment fa-lg"></i>
+                留言：
+                <a href="{{ post.url | relative_url }}#disqus_thread">First</a>.
+              </div>
             </div>
-
-            <div class="post-content-meta">
-              <i class="fas fa-tags fa-lg"></i>
-              標籤：
-
-            </div>
-
 
 
 

@@ -2,30 +2,35 @@
   {% if {{page.title}} == "首頁" %}
     <div class="info-box info-news">
       <i class="far fa-flag fa-3x"></i>
-      <h1>最新消息</h1>
+      <h2>最新消息</h2>
       <div class="info-content">
-        <p class="comment">--這裡存放部落格的最新消息--</p>
-        <p>部落格剛剛成立啦！ 預計這周完成基本功能(8/17)</p>
-        <p>施工清單</p>
+        <p class="comment">--這裡存放部落格的最新消息--
+          <br>
+          部落格剛剛成立啦！ 預計這周完成基本功能
+        </p>
+
+        <h3>施工清單</h3>
         <hr class="hr-space hr-light">
         <ul>
-          <li>文章標籤功能</li>
-          <li>文章留言功能</li>
-          <li>關於這裡網頁裝飾</li>
-          <li>增加文章</li>
           <li>為網頁增加插畫</li>
+          <li>文章標籤功能</li>
+          <li>關於這裡頁面裝飾</li>
+          <li>增加文章(到10篇)</li>
+          <li>行動裝置Menu改為毛玻璃樣式</li>
+          <li>行動裝置Menu-Icon動畫重製</li>
+
         </ul>
       </div>
     </div>
 
     <div class="info-box info-pages">
       <i class="far fa-newspaper fa-3x"></i>
-      <h1>全部文章<br>共
+      <h2>全部文章<br>共
         <a href="/#all-posts" class="artical-counter">
           {{ paginator.total_posts }}
         </a>
         篇
-      </h1>
+      </h2>
       <div class="info-content">
         <p class="comment">底下你可以找到所有寫過的文章，<br>依照新到舊排序</p>
       </div>

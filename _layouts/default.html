@@ -9,7 +9,7 @@
 			{{page.title}}
 		{% endif %} |
 		Rice部落格
-		{% if page.titleAfter %}
+		{% if page.title-after %}
 		 -
 		{{page.titleAfter}}
 		{% endif %}
@@ -33,7 +33,6 @@
 	      {% include hero.html %}
 <!-- Add margin to main area -->
 	      <main class="content-wrap">
-
 					{{ content }}
 	      </main>
 	    {% include footer.html %}

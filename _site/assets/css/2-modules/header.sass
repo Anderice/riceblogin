@@ -68,31 +68,47 @@
 
 .nav-item
   padding: 1rem 0
-  transition: 0.3s
+
   width: 100%
 
   &:hover
     background-color: $main
 
+
     & > a
       font-weight: bold
       color: $dark
+      padding-left: 1rem
+      transition: all 0.3s
 
 .mobile-nav-toggle
+  background-color: $light
+  padding: 3rem
+  border-radius: 50%
+  justify-content: center
+
+  transform: scale(0.8)
+
   z-index: 2
 
   position: fixed
   top: 30px
-  right: 30px
-  width: 40px
-  height: 40px
+  right: 20px
+  width: 20px
+
   display: none
   cursor: pointer
+
+  transition: 0.3s
+
+  &:hover
+    transform: scale(1.1)
+    background: $main
 
   span,
   span::before,
   span::after
-    width: 40px
+    width: 30px
     content: ''
     display: block
     position: relative
@@ -119,10 +135,11 @@
   &:hover span::before
     transform: rotate(-45deg)
 
+@include small-size
+
+
 
 @include medium-size
-  html
-    font-size: 12px
 
   .home-wrap header
     min-width: 0
@@ -135,12 +152,13 @@
     display: flex
     align-items: center
 
+
   .mobile-nav-panel
     transition: 0.3s
     z-index: 3
     position: fixed
-    top: -300px
-    left: -100px
+
+    left: -200px
     height: 100%
     width: 0
     background: $heavy-gray

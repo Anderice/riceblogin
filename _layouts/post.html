@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 
@@ -9,15 +10,16 @@ layout: default
     <p class="author">作者 : {{ page.author }}</p>
     <time class="comment italic">{{ page.date | date_to_string }}/</time>
 
-    {% for post in site.categories[page.category] %}
+    <!-- {% for post in site.categories[page.category] %}
     <a href="{{ post.url | absolute_url }}">
       {{ post.title }}
     </a>
-  {% endfor %}
-
-
+  {% endfor %} -->
     <hr class="hr-heavy hr-space">
   </div>
 
 {{ content }}
+
+  {% include disqus.html %}
+
 </artical>

@@ -4,6 +4,9 @@ exclude: ["node_modules", "gulpfile.js", "package.json","README.md"]
 baseurl: "/riceblogin"
 # baseurl: "/riceblogin"
 
+disqus:
+  shortname: rice
+
 collections:
   cats:
     output: true

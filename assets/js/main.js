@@ -7,9 +7,8 @@ function mobiletoggle(){
 
 function mobiletoggleOFF(){
   console.log(1)
-  document.getElementById("mobile-nav").style.top = "-300px";
+
   document.getElementById("mobile-nav").style.display = "block";
   document.getElementById("mobile-nav").style.width = "0%";
-  document.getElementById("mobile-nav").style.left = "-100px";
-
+  document.getElementById("mobile-nav").style.left = "-200px";
 }

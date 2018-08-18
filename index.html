@@ -1,6 +1,7 @@
 ---
 layout: default
-titleAfter: 個人網站的副標題
+hero-class: index-hero
+title-after: 個人網站的副標題
 
 pagination:
   trail:
@@ -12,6 +13,7 @@ title: 首頁
 description: "安安你好，這裡是部落格首頁"
 ---
 
+
 {% include pageinfo.html %}
 {% include allposts.html %}
 
@@ -19,3 +21,6 @@ description: "安安你好，這裡是部落格首頁"
 {% if {{page.title}} == "首頁" %}
   {% include artical-sections.html %}
 {% endif %}
+
+
+<script id="dsq-count-scr" src="//riceblog.disqus.com/count.js" async></script>
