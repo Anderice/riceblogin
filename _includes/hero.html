@@ -1,11 +1,12 @@
-<div class="home-hero {{page.hero-class}}">
+<div class="home-hero" {%if page.entry-image %} style="background-image: url('{{ page.entry-image}}');"{% endif %}>
   <!-- If the page is index then display... -->
   {% if page.title =="首頁" %}
     <h1 class="hero-title">首頁</h1>
     <p class="hero-subtitle">歡迎來到我的部落格<br>有一個部落格就像在網路世界中有一片屬於自己的天地一般
-  <!-- If the page is index then display... -->
-  {% elsif page.title contains 'page' %}
-    <h1 class="hero-title">{{page.title}}</h1>
+  <!-- If page is allpost-page then -->
+  {% elsif page.title contains '頁' %}
+    <h1 class="hero-title">{{ page.title }}</h1>
+    <p class="hero-subtitle">{{ paginator.total_pages }}</p>
   {% else %}
     <h1 class="hero-title">{{ page.title }}</h1>
     <p class="hero-subtitle">{{ page.description }}</p>

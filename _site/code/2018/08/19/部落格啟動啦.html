@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>
 		
-			測試文章五
+			部落格啟動啦
 		 |
 		Rice部落格
 		
@@ -16,7 +16,7 @@
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" href="/riceblogin/assets/css/main.css"/>
+	<link rel="stylesheet" href="/assets/css/main.css"/>
 
 
 	</head>
@@ -27,10 +27,10 @@
 	  <header>
   <div class="header-position">
     <span class="page-location">
-      <h1>測試文章五</h1>
+      <h1>部落格啟動啦</h1>
     </span>
     <div class="person-content">
-      <img class="person-thumbnail" src="/riceblogin/assets/img/basic/thumbnail.jpg" alt="My personal thumbnail image">
+      <img class="person-thumbnail" src="/assets/img/basic/thumbnail.jpg" alt="My personal thumbnail image">
         <h1>RICE</h1>
         <p class="comment">創作者</p>
         <p class="person-description">簡短的敘述</p>
@@ -41,9 +41,9 @@
     </div>
     <nav class="site-nav">
       <ul>
-        <li class="nav-item"><a href="/riceblogin/">首頁</a></li>
-        <li class="nav-item"><a href="/riceblogin/intro/">關於這裡</a></li>
-        <li class="nav-item"><a href="/riceblogin/categeory/">文章分類</a></li>
+        <li class="nav-item"><a href="/">首頁</a></li>
+        <li class="nav-item"><a href="/intro/">關於這裡</a></li>
+        <li class="nav-item"><a href="/categeory/">文章分類</a></li>
       </ul>
     </nav>
   </div>
@@ -56,7 +56,7 @@
 <div class="mobile-nav-panel" id="mobile-nav" onclick="mobiletoggleOFF()">
   <div class="nav-panel-content">
     <span>
-      <h1>測試文章五</h1>
+      <h1>部落格啟動啦</h1>
     </span>
 
     <div>
@@ -68,9 +68,9 @@
 
     <nav class="site-nav color-light">
       <ul>
-        <li class="nav-item"><a href="/riceblogin/index.html">首頁</a></li>
-        <li class="nav-item"><a href="/riceblogin/intro">關於這裡</a></li>
-        <li class="nav-item"><a href="/riceblogin/categeory">文章分類</a></li>
+        <li class="nav-item"><a href="/index.html">首頁</a></li>
+        <li class="nav-item"><a href="/intro">關於這裡</a></li>
+        <li class="nav-item"><a href="/categeory">文章分類</a></li>
       </ul>
     </nav>
   </div>
@@ -79,11 +79,11 @@
 
 <!-- Make Right section centered and fullwidth -->
 	  <div class="home-sections">
-	      <div class="home-hero ">
+	      <div class="home-hero"  style="background-image: url('/assets/img/posts/2018/08/19/entry-image.jpg');">
   <!-- If the page is index then display... -->
   
-    <h1 class="hero-title">測試文章五</h1>
-    <p class="hero-subtitle">artical 5。</p>
+    <h1 class="hero-title">部落格啟動啦</h1>
+    <p class="hero-subtitle">關於這個部落格的一切，以及開發過程</p>
   
 </div>
 
@@ -92,36 +92,59 @@
 					<!-- Post time -->
 <artical class="post-content">
   <div class="post-meta">
-    <p class="author">作者 : </p>
-    <time class="comment italic">11 Aug 2018/</time>
-
-    <!-- 
-    <a href="/riceblogin/note/2018/08/12/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E5%9B%9B.html">
-      測試文章四
-    </a>
-  
-    <a href="/riceblogin/note/2018/08/11/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%94.html">
-      測試文章五
-    </a>
-   -->
-    <hr class="hr-heavy hr-space">
+    <p class="author">作者 : Rice</p>
+    <time class="comment comment-heavy italic">19 Aug 2018</time>
+    <!-- <hr class="hr-heavy hr-space"> -->
   </div>
+<h2 id="部落格開發">部落格開發</h2>
+<p><a href="https://github.com/Anderice/riceblogin">專案位置</a>
+採用Github Page服務、Jekyll固態網頁生成。
+用到的語言有…</p>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>Liquid Template Language</li>
+  <li>Markdown</li>
+</ul>
 
-<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory - edit this post and re-build (or run with the <code class="highlighter-rouge">-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
+<p>工作環境有…</p>
+<ul>
+  <li>Gulp</li>
+  <li>Sass</li>
+</ul>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>先在這裡道歉，本人是個只會寫HTML、CSS的菜B8，因為邏輯太爛所以所有效果幾乎都是用CSS建構的，JS什麼的太難還要學啊。</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h2 id="幹嘛要自己寫一個部落格">幹嘛要自己寫一個部落格？</h2>
+<p>這要講到為什麼我會接觸到前端設計，很簡單──報名了學校的網頁選手年底要比賽，所以要提升網頁觀念、語法練習、文案撰寫……最重要的是培養興趣。
+##這個大概之後可以再寫一篇，太多東西要吐槽了</p>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll’s GitHub repo</a>.</p>
+<h2 id="還有其他的嗎">還有其他的嗎？</h2>
+<p>部落格內我大多只會用自己的創作或是相片，像是設計專案、代碼專案、拍攝，不是啥芝麻小事就丟上來這樣，還有之前的東西也不會貼上來，就從今天開始。</p>
 
+<p>似乎有一句話是這樣說：</p>
+<blockquote>
+  <p>寫完的代碼超過幾個月沒回去看，看起來都像是別人寫的</p>
+</blockquote>
 
+<p>我覺得拿到其他領域也是說得通，要多回顧自己作品了解自己走了多少路，還有畫圖的黑歷史拿出來笑一笑也是很很舒壓。</p>
 
+<figure class="post-figure figure-small float-left">
+  <img src="/assets/img/posts/2018/08/19/1.jpg" alt="學長的肖像" />
+  <figcaption>學長肖像</figcaption>
+</figure>
+
+<h2 id="感謝名單">感謝名單</h2>
+<ol>
+  <li>GitHub－免費固態網頁建置，我還不架爆</li>
+  <li>Jekyll－Plugins 感謝大大製作插件讓我後人乘涼</li>
+  <li>學長－感謝學長在艱難時提供的心靈雞湯</li>
+</ol>
+
+<p>Vestibulum eu vulputate magna…</p>
+
+</artical>
     <div class="disqus-info" style="text-align: center";>
     <hr class="hr-light hr-space">
     <h3>留言板</h3>
@@ -153,8 +176,6 @@ To add new posts, simply add a file in the <code class="highlighter-rouge">_post
   <script id="dsq-count-scr" src="//riceblog.disqus.com/count.js" async></script>
 
 
-</artical>
-
 	      </main>
 	    <footer>
   <div class="footer-content">
@@ -165,6 +186,6 @@ To add new posts, simply add a file in the <code class="highlighter-rouge">_post
 	  </div>
 	</div>
 
-<script src="/riceblogin/assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

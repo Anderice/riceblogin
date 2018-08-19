@@ -1,8 +1,65 @@
+blockquote
+  background-color: $main
+  border-left: 10px solid $dark
+  border-radius: 5px 10px 10px 5px
+  margin: 1.5em 10px
+  padding: 1em 10px
+  quotes: "\201C""\201D""\2018""\2019"
+
+blockquote:before
+  color: $dark
+  content: open-quote
+  font-size: 4em
+  line-height: 0.1em
+  margin-right: 0.25em
+  vertical-align: -0.4em
+
+blockquote p
+  display: inline
+
 .post-content
+  +clearfix
+  p
+    text-indent: 2rem
+
+.post-figure
+
+  text-align: center
+
+  overflow: hidden
+  border: 0.3rem solid $dark
+  +box-shadow-passive
+
+  &:hover
+  +box-shadow-active
+
   img
-    max-width: 300px
+    width: 100%
+    +box-shadow-passive
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1)
+    transition: all 0.3s
+
+    &:hover
+      transform: scale(1.2)
+
+.figure-large
+  width: 100%
+.figure-medium
+  width: 50%
+.figure-small
+  width: 30%
 
 .post-meta
+  display: flex
+  align-items: baseline
 
 .author
   font-size: 2rem
+
+.image-float
+  float: right
+
+@include small-size()
+  .post-content
+    img
+      max-width: 100%

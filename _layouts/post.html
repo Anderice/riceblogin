@@ -1,6 +1,7 @@
 ---
 layout: default
 comments: true
+hero-class: post-hero
 ---
 
 
@@ -8,18 +9,9 @@ comments: true
 <artical class="post-content">
   <div class="post-meta">
     <p class="author">作者 : {{ page.author }}</p>
-    <time class="comment italic">{{ page.date | date_to_string }}/</time>
-
-    <!-- {% for post in site.categories[page.category] %}
-    <a href="{{ post.url | absolute_url }}">
-      {{ post.title }}
-    </a>
-  {% endfor %} -->
-    <hr class="hr-heavy hr-space">
+    <time class="comment comment-heavy italic">{{ page.date | date_to_string }}</time>
+    <!-- <hr class="hr-heavy hr-space"> -->
   </div>
-
 {{ content }}
-
-  {% include disqus.html %}
-
 </artical>
+  {% include disqus.html %}

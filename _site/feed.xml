@@ -1,45 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="/riceblogin/feed.xml" rel="self" type="application/atom+xml" /><link href="/riceblogin/" rel="alternate" type="text/html" /><updated>2018-08-18T13:03:00+08:00</updated><id>/riceblogin/</id><title type="html">TESTING</title><entry><title type="html">測試文章－定義元件</title><link href="/riceblogin/code/2018/08/15/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%B8%80.html" rel="alternate" type="text/html" title="測試文章－定義元件" /><published>2018-08-15T00:00:00+08:00</published><updated>2018-08-15T00:00:00+08:00</updated><id>/riceblogin/code/2018/08/15/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%B8%80</id><content type="html" xml:base="/riceblogin/code/2018/08/15/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%B8%80.html">&lt;p&gt;&lt;img src=&quot;/riceblogin/assets/img/1.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;</content><author><name>Rice</name></author><category term="code" /><category term="cool" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/hgaNulR.jpg" /></entry><entry><title type="html">測試文章二</title><link href="/riceblogin/casual/2018/08/14/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%8C.html" rel="alternate" type="text/html" title="測試文章二" /><published>2018-08-14T00:00:00+08:00</published><updated>2018-08-14T00:00:00+08:00</updated><id>/riceblogin/casual/2018/08/14/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%8C</id><content type="html" xml:base="/riceblogin/casual/2018/08/14/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%8C.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code class=&quot;highlighter-rouge&quot;&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-08-19T21:37:16+08:00</updated><id>/</id><title type="html">TESTING</title><entry><title type="html">部落格啟動啦</title><link href="/code/2018/08/19/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%95%9F%E5%8B%95%E5%95%A6.html" rel="alternate" type="text/html" title="部落格啟動啦" /><published>2018-08-19T00:00:00+08:00</published><updated>2018-08-19T00:00:00+08:00</updated><id>/code/2018/08/19/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%95%9F%E5%8B%95%E5%95%A6</id><content type="html" xml:base="/code/2018/08/19/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%95%9F%E5%8B%95%E5%95%A6.html">&lt;h2 id=&quot;部落格開發&quot;&gt;部落格開發&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Anderice/riceblogin&quot;&gt;專案位置&lt;/a&gt;
+採用Github Page服務、Jekyll固態網頁生成。
+用到的語言有…&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;Javascript&lt;/li&gt;
+  &lt;li&gt;Liquid Template Language&lt;/li&gt;
+  &lt;li&gt;Markdown&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;工作環境有…&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Gulp&lt;/li&gt;
+  &lt;li&gt;Sass&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;先在這裡道歉，本人是個只會寫HTML、CSS的菜B8，因為邏輯太爛所以所有效果幾乎都是用CSS建構的，JS什麼的太難還要學啊。&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="casual" /><summary type="html">You’ll find this post in your _posts directory - edit this post and re-build (or run with the -w switch) to see your changes! To add new posts, simply add a file in the _posts directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/hgaNulR.jpg" /></entry><entry><title type="html">測試文章三</title><link href="/riceblogin/design/2018/08/13/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%B8%89.html" rel="alternate" type="text/html" title="測試文章三" /><published>2018-08-13T00:00:00+08:00</published><updated>2018-08-13T00:00:00+08:00</updated><id>/riceblogin/design/2018/08/13/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%B8%89</id><content type="html" xml:base="/riceblogin/design/2018/08/13/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%B8%89.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code class=&quot;highlighter-rouge&quot;&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+&lt;h2 id=&quot;幹嘛要自己寫一個部落格&quot;&gt;幹嘛要自己寫一個部落格？&lt;/h2&gt;
+&lt;p&gt;這要講到為什麼我會接觸到前端設計，很簡單──報名了學校的網頁選手年底要比賽，所以要提升網頁觀念、語法練習、文案撰寫……最重要的是培養興趣。
+##這個大概之後可以再寫一篇，太多東西要吐槽了&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;h2 id=&quot;還有其他的嗎&quot;&gt;還有其他的嗎？&lt;/h2&gt;
+&lt;p&gt;部落格內我大多只會用自己的創作或是相片，像是設計專案、代碼專案、拍攝，不是啥芝麻小事就丟上來這樣，還有之前的東西也不會貼上來，就從今天開始。&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;似乎有一句話是這樣說：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;寫完的代碼超過幾個月沒回去看，看起來都像是別人寫的&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="design" /><summary type="html">You’ll find this post in your _posts directory - edit this post and re-build (or run with the -w switch) to see your changes! To add new posts, simply add a file in the _posts directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/hgaNulR.jpg" /></entry><entry><title type="html">測試文章四</title><link href="/riceblogin/note/2018/08/12/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E5%9B%9B.html" rel="alternate" type="text/html" title="測試文章四" /><published>2018-08-12T00:00:00+08:00</published><updated>2018-08-12T00:00:00+08:00</updated><id>/riceblogin/note/2018/08/12/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E5%9B%9B</id><content type="html" xml:base="/riceblogin/note/2018/08/12/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E5%9B%9B.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code class=&quot;highlighter-rouge&quot;&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+&lt;p&gt;我覺得拿到其他領域也是說得通，要多回顧自己作品了解自己走了多少路，還有畫圖的黑歷史拿出來笑一笑也是很很舒壓。&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;figure class=&quot;post-figure figure-small float-left&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/2018/08/19/1.jpg&quot; alt=&quot;學長的肖像&quot; /&gt;
+  &lt;figcaption&gt;學長肖像&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;感謝名單&quot;&gt;感謝名單&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;GitHub－免費固態網頁建置，我還不架爆&lt;/li&gt;
+  &lt;li&gt;Jekyll－Plugins 感謝大大製作插件讓我後人乘涼&lt;/li&gt;
+  &lt;li&gt;學長－感謝學長在艱難時提供的心靈雞湯&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="note" /><category term="four" /><summary type="html">You’ll find this post in your _posts directory - edit this post and re-build (or run with the -w switch) to see your changes! To add new posts, simply add a file in the _posts directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/hgaNulR.jpg" /></entry><entry><title type="html">測試文章五</title><link href="/riceblogin/note/2018/08/11/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%94.html" rel="alternate" type="text/html" title="測試文章五" /><published>2018-08-11T00:00:00+08:00</published><updated>2018-08-11T00:00:00+08:00</updated><id>/riceblogin/note/2018/08/11/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%94</id><content type="html" xml:base="/riceblogin/note/2018/08/11/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%94.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code class=&quot;highlighter-rouge&quot;&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="note" /><category term="good" /><summary type="html">You’ll find this post in your _posts directory - edit this post and re-build (or run with the -w switch) to see your changes! To add new posts, simply add a file in the _posts directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/hgaNulR.jpg" /></entry></feed>
+&lt;p&gt;Vestibulum eu vulputate magna…&lt;/p&gt;</content><author><name>Rice</name></author><category term="code" /><summary type="html">部落格開發 專案位置 採用Github Page服務、Jekyll固態網頁生成。 用到的語言有… HTML CSS Javascript Liquid Template Language Markdown</summary></entry></feed>

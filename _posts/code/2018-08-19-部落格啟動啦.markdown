@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "部落格啟動啦"
+date:   2018-08-19
+category: code
+description: 關於這個部落格的一切，以及開發過程
+entry-image: "/assets/img/posts/2018/08/19/entry-image.jpg"
+tag:
+author: Rice
+---
+
+## 部落格開發
+[專案位置](https://github.com/Anderice/riceblogin)
+採用Github Page服務、Jekyll固態網頁生成。
+用到的語言有...
+- HTML
+- CSS
+- Javascript
+- Liquid Template Language
+- Markdown
+
+工作環境有...
+- Gulp
+- Sass
+
+先在這裡道歉，本人是個只會寫HTML、CSS的菜B8，因為邏輯太爛所以所有效果幾乎都是用CSS建構的，JS什麼的太難還要學啊。
+
+## 幹嘛要自己寫一個部落格？
+這要講到為什麼我會接觸到前端設計，很簡單──報名了學校的網頁選手年底要比賽，所以要提升網頁觀念、語法練習、文案撰寫……最重要的是培養興趣。
+##這個大概之後可以再寫一篇，太多東西要吐槽了
+
+## 還有其他的嗎？
+部落格內我大多只會用自己的創作或是相片，像是設計專案、代碼專案、拍攝，不是啥芝麻小事就丟上來這樣，還有之前的東西也不會貼上來，就從今天開始。
+
+似乎有一句話是這樣說：
+>寫完的代碼超過幾個月沒回去看，看起來都像是別人寫的
+
+我覺得拿到其他領域也是說得通，要多回顧自己作品了解自己走了多少路，還有畫圖的黑歷史拿出來笑一笑也是很很舒壓。
+
+<figure class="post-figure figure-small float-left">
+  <img src="{{site.url}}/assets/img/posts/2018/08/19/1.jpg" alt="學長的肖像"/>
+  <figcaption>學長肖像</figcaption>
+</figure>
+
+## 感謝名單
+1. GitHub－免費固態網頁建置，我還不架爆
+2. Jekyll－Plugins 感謝大大製作插件讓我後人乘涼
+3. 學長－感謝學長在艱難時提供的心靈雞湯
+
+
+
+
+
+
+
+Vestibulum eu vulputate magna...

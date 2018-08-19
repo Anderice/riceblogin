@@ -1,10 +1,15 @@
 
 <!-- posts -->
-  <h1 id="all-posts" class="title">所有文章</h1>
+<div class="section-heading">
+  <hr class="hr-space hr-light">
+  <h2 id="all-posts" class="title">所有文章</h2>
+  <p>從這裡找到你有興趣的文章類別</p>
+</div>
+
 <div class="all-posts">
     {% for post in paginator.posts %}
       <figure class="post">
-        <img src="{{ baseurl }}{{ post.image }}" alt="">
+        <img src="{{ site.baseurl }}{{ post.entry-image }}" alt="">
           <div class="post-content">
             <figcaption class="post-title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></figcaption>
             <!-- Post meta section -->

@@ -11,7 +11,7 @@
 		Rice部落格
 		
 		 -
-		
+		休閒部落格
 		
 
 	</title>
@@ -19,7 +19,7 @@
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" href="/riceblogin/assets/css/main.css"/>
+	<link rel="stylesheet" href="/assets/css/main.css"/>
 
 
 	</head>
@@ -33,7 +33,7 @@
       <h1>首頁</h1>
     </span>
     <div class="person-content">
-      <img class="person-thumbnail" src="/riceblogin/assets/img/basic/thumbnail.jpg" alt="My personal thumbnail image">
+      <img class="person-thumbnail" src="/assets/img/basic/thumbnail.jpg" alt="My personal thumbnail image">
         <h1>RICE</h1>
         <p class="comment">創作者</p>
         <p class="person-description">簡短的敘述</p>
@@ -44,9 +44,9 @@
     </div>
     <nav class="site-nav">
       <ul>
-        <li class="nav-item"><a href="/riceblogin/">首頁</a></li>
-        <li class="nav-item"><a href="/riceblogin/intro/">關於這裡</a></li>
-        <li class="nav-item"><a href="/riceblogin/categeory/">文章分類</a></li>
+        <li class="nav-item"><a href="/">首頁</a></li>
+        <li class="nav-item"><a href="/intro/">關於這裡</a></li>
+        <li class="nav-item"><a href="/categeory/">文章分類</a></li>
       </ul>
     </nav>
   </div>
@@ -71,9 +71,9 @@
 
     <nav class="site-nav color-light">
       <ul>
-        <li class="nav-item"><a href="/riceblogin/index.html">首頁</a></li>
-        <li class="nav-item"><a href="/riceblogin/intro">關於這裡</a></li>
-        <li class="nav-item"><a href="/riceblogin/categeory">文章分類</a></li>
+        <li class="nav-item"><a href="/index.html">首頁</a></li>
+        <li class="nav-item"><a href="/intro">關於這裡</a></li>
+        <li class="nav-item"><a href="/categeory">文章分類</a></li>
       </ul>
     </nav>
   </div>
@@ -82,18 +82,42 @@
 
 <!-- Make Right section centered and fullwidth -->
 	  <div class="home-sections">
-	      <div class="home-hero index-hero">
+	      <div class="home-hero"  style="background-image: url('/assets/img/basic/index-hero.jpg');">
   <!-- If the page is index then display... -->
   
     <h1 class="hero-title">首頁</h1>
     <p class="hero-subtitle">歡迎來到我的部落格<br>有一個部落格就像在網路世界中有一片屬於自己的天地一般
-  <!-- If the page is index then display... -->
+  <!-- If page is allpost-page then -->
   
 </div>
 
 <!-- Add margin to main area -->
 	      <main class="content-wrap">
-					<section class="info">
+					<!-- <ul class="tag-cloud">
+
+
+</ul>
+
+
+
+
+<ul class="archive">
+  
+
+    
+      <h3>2018</h3>
+    
+
+    <li>
+        <div class="month">Aug</div>
+        <div class="archive-post-title"><a href="/code/2018/08/19/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%95%9F%E5%8B%95%E5%95%A6.html">部落格啟動啦</a></div>
+    </li>
+  
+</ul> -->
+
+
+
+<section class="info">
   
     <div class="info-box info-news">
       <i class="far fa-flag fa-3x"></i>
@@ -122,7 +146,7 @@
       <i class="far fa-newspaper fa-3x"></i>
       <h2>全部文章<br>共
         <a href="/#all-posts" class="artical-counter">
-          5
+          1
         </a>
         篇
       </h2>
@@ -137,20 +161,25 @@
 
 
 <!-- posts -->
-  <h1 id="all-posts" class="title">所有文章</h1>
+<div class="section-heading">
+  <hr class="hr-space hr-light">
+  <h2 id="all-posts" class="title">所有文章</h2>
+  <p>從這裡找到你有興趣的文章類別</p>
+</div>
+
 <div class="all-posts">
     
       <figure class="post">
-        <img src="https://i.imgur.com/hgaNulR.jpg" alt="">
+        <img src="/assets/img/posts/2018/08/19/entry-image.jpg" alt="">
           <div class="post-content">
-            <figcaption class="post-title"><a class="post-link" href="/riceblogin/code/2018/08/15/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%B8%80.html">測試文章－定義元件</a></figcaption>
+            <figcaption class="post-title"><a class="post-link" href="/code/2018/08/19/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%95%9F%E5%8B%95%E5%95%A6.html">部落格啟動啦</a></figcaption>
             <!-- Post meta section -->
             <div class="post-content-meta-section">
               <!-- Post time meta -->
               <div class="post-content-meta">
                 <i class="far fa-calendar-alt fa-lg"></i>
                 日期：
-                <time>2018, Aug 15</time>
+                <time>2018, Aug 19</time>
               </div>
               <hr class="hr-vertical hr-light">
               <!-- Post Tags meta -->
@@ -163,7 +192,7 @@
               <div class="post-content-meta">
                 <i class="fas fa-comment fa-lg"></i>
                 留言：
-                <a href="/riceblogin/code/2018/08/15/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%B8%80.html#disqus_thread">First</a>.
+                <a href="/code/2018/08/19/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%95%9F%E5%8B%95%E5%95%A6.html#disqus_thread">First</a>.
               </div>
             </div>
 
@@ -172,163 +201,10 @@
               <!-- {
                   "tags": [
                       
-                        "good",
-
-                      
-                        "four",
-
-                      
-                        "cool"
-
-                      
                   ]
               } -->
 
-            <p>這篇文章是為了測試並顯示文章內元素所寫，這裡會有所有文檔內定義後可用的原件。</p>
-          </div>
-      </figure>
-    
-      <figure class="post">
-        <img src="https://i.imgur.com/hgaNulR.jpg" alt="">
-          <div class="post-content">
-            <figcaption class="post-title"><a class="post-link" href="/riceblogin/casual/2018/08/14/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%8C.html">測試文章二</a></figcaption>
-            <!-- Post meta section -->
-            <div class="post-content-meta-section">
-              <!-- Post time meta -->
-              <div class="post-content-meta">
-                <i class="far fa-calendar-alt fa-lg"></i>
-                日期：
-                <time>2018, Aug 14</time>
-              </div>
-              <hr class="hr-vertical hr-light">
-              <!-- Post Tags meta -->
-              <div class="post-content-meta">
-                <i class="fas fa-tags fa-lg"></i>
-                標籤：
-              </div>
-              <hr class="hr-vertical hr-light">
-              <!-- Post Comments meta -->
-              <div class="post-content-meta">
-                <i class="fas fa-comment fa-lg"></i>
-                留言：
-                <a href="/riceblogin/casual/2018/08/14/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%BA%8C.html#disqus_thread">First</a>.
-              </div>
-            </div>
-
-
-
-              <!-- {
-                  "tags": [
-                      
-                        "good",
-
-                      
-                        "four",
-
-                      
-                        "cool"
-
-                      
-                  ]
-              } -->
-
-            <p>artical 2。</p>
-          </div>
-      </figure>
-    
-      <figure class="post">
-        <img src="https://i.imgur.com/hgaNulR.jpg" alt="">
-          <div class="post-content">
-            <figcaption class="post-title"><a class="post-link" href="/riceblogin/design/2018/08/13/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%B8%89.html">測試文章三</a></figcaption>
-            <!-- Post meta section -->
-            <div class="post-content-meta-section">
-              <!-- Post time meta -->
-              <div class="post-content-meta">
-                <i class="far fa-calendar-alt fa-lg"></i>
-                日期：
-                <time>2018, Aug 13</time>
-              </div>
-              <hr class="hr-vertical hr-light">
-              <!-- Post Tags meta -->
-              <div class="post-content-meta">
-                <i class="fas fa-tags fa-lg"></i>
-                標籤：
-              </div>
-              <hr class="hr-vertical hr-light">
-              <!-- Post Comments meta -->
-              <div class="post-content-meta">
-                <i class="fas fa-comment fa-lg"></i>
-                留言：
-                <a href="/riceblogin/design/2018/08/13/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E4%B8%89.html#disqus_thread">First</a>.
-              </div>
-            </div>
-
-
-
-              <!-- {
-                  "tags": [
-                      
-                        "good",
-
-                      
-                        "four",
-
-                      
-                        "cool"
-
-                      
-                  ]
-              } -->
-
-            <p>artical 3。 稱華文、中文、唐話，是漢藏語系漢語族下之一種語文，為世界使用人數最多的語言，目前世界有六分之一人口做為母語。漢語有多種分支語言，當中現代標準漢</p>
-          </div>
-      </figure>
-    
-      <figure class="post">
-        <img src="https://i.imgur.com/hgaNulR.jpg" alt="">
-          <div class="post-content">
-            <figcaption class="post-title"><a class="post-link" href="/riceblogin/note/2018/08/12/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E5%9B%9B.html">測試文章四</a></figcaption>
-            <!-- Post meta section -->
-            <div class="post-content-meta-section">
-              <!-- Post time meta -->
-              <div class="post-content-meta">
-                <i class="far fa-calendar-alt fa-lg"></i>
-                日期：
-                <time>2018, Aug 12</time>
-              </div>
-              <hr class="hr-vertical hr-light">
-              <!-- Post Tags meta -->
-              <div class="post-content-meta">
-                <i class="fas fa-tags fa-lg"></i>
-                標籤：
-              </div>
-              <hr class="hr-vertical hr-light">
-              <!-- Post Comments meta -->
-              <div class="post-content-meta">
-                <i class="fas fa-comment fa-lg"></i>
-                留言：
-                <a href="/riceblogin/note/2018/08/12/%E6%B8%AC%E8%A9%A6%E6%96%87%E7%AB%A0%E5%9B%9B.html#disqus_thread">First</a>.
-              </div>
-            </div>
-
-
-
-              <!-- {
-                  "tags": [
-                      
-                        "good",
-
-                      
-                        "four",
-
-                      
-                        "cool"
-
-                      
-                  ]
-              } -->
-
-            <p>artical 4。</p>
+            <p>關於這個部落格的一切，以及開發過程</p>
           </div>
       </figure>
     
@@ -339,120 +215,86 @@
 <div class="paginate">
 
   
-
-    
-       <a class="paginate-button" href="/riceblogin/index.html">第一頁</a>
-   
-
-    
-
-    
-      
-
-        <div class=" selected paginate-button">
-            <a href="/riceblogin/index.html" title="首頁">1</a>
-        </div>
-
-      
-
-        <div class="  paginate-button">
-            <a href="/riceblogin/page/2/index.html" title="首頁 - page 2">2</a>
-        </div>
-
-      
-    
-
-    
-      <a class="paginate-button" href="/riceblogin/page/2/index.html">下一頁</a>
-    
-
-    
-
-   <a class="paginate-button" href="/riceblogin/page/2/index.html">最後一頁</a>
-
-    
-
-  
 </div>
 
 
 <!-- Add artical-categeory section if title is Mainpage -->
 
   
-<div class="artical-section-heading">
+<div class="section-heading">
+  <hr class="hr-space hr-light">
   <h2 class="title">文章分類</h2>
   <p>從這裡找到你有興趣的文章類別</p>
 </div>
 
 <div class="artical-sections">
   <div class="artical">
-    <img src="assets/img/basic/artical-section-illust.jpg" alt="Articles about Illustrations">
+    <img src="/assets/img/basic/artical-section-illust.jpg" alt="Articles about Illustrations">
     <div class="artical-content">
       <p>—文章類別—</p>
       <h2>繪畫</h2>
-
-      不管是手繪或是電腦繪圖，天馬行空的世界
+      不管是手繪或是電腦繪圖<br>天馬行空的世界
       <hr>
       <a href="categeory/artical-section-illust.jpg" class="btn btn-light">了解更多</a>
     </div>
   </div>
 
   <div class="artical">
-    <img src="assets/img/basic/artical-section-design.jpg" alt="Articles about Design">
+    <img src="/assets/img/basic/artical-section-design.jpg" alt="Articles about Design">
     <div class="artical-content">
       <p>—文章類別—</p>
       <h2>設計</h2>
 
-      拿起圖紙實際規劃，設計專案構想
+      拿起圖紙實際規劃<br>設計專案構想
       <hr>
-      <a href="/riceblogin/categeory/#design" class="btn btn-light">了解更多</a>
+      <a href="/categeory/#design" class="btn btn-light">了解更多</a>
     </div>
   </div>
 
   <div class="artical">
-    <img src="assets/img/basic/artical-section-code.jpg" alt="Articles about Coding">
+    <img src="/assets/img/basic/artical-section-code.jpg" alt="Articles about Coding">
     <div class="artical-content">
       <p>—文章類別—</p>
       <h2>代碼</h2>
 
-      21世紀必學，怎麼能不跟上呢?
+      聽說是21世紀必學<br>怎麼能不跟上呢？
       <hr>
-      <a href="/riceblogin/categeory/#code" class="btn btn-light">了解更多</a>
+      <a href="/categeory/#code" class="btn btn-light">了解更多</a>
     </div>
   </div>
 
   <div class="artical">
-    <img src="assets/img/basic/artical-section-notes.jpg" alt="Articles about Notes">
+    <img src="/assets/img/basic/artical-section-notes.jpg" alt="Articles about Notes">
     <div class="artical-content">
       <p>—文章類別—</p>
       <h2>筆記</h2>
-
-      隨筆紀錄，在某時某地某時空的念頭
+      在某時某地某時空的念頭<br>
+      隨筆紀錄
       <hr>
-      <a href="/riceblogin/categeory/#note" class="btn btn-light">了解更多</a>
+      <a href="/categeory/#note" class="btn btn-light">了解更多</a>
     </div>
   </div>
 
   <div class="artical">
-    <img src="assets/img/basic/artical-section-casual.jpg" alt="Articles about Casual">
+    <img src="/assets/img/basic/artical-section-casual.jpg" alt="Articles about Casual">
     <div class="artical-content">
       <p>—文章類別—</p>
       <h2>休閒</h2>
 
-      出外旅遊~還是打打電動，放鬆的場所
+      出外旅遊~還是打打電動<br>放鬆的場所
       <hr>
-      <a href="/riceblogin/categeory/#casual" class="btn btn-light">了解更多</a>
+      <a href="/categeory/#casual" class="btn btn-light">了解更多</a>
     </div>
   </div>
 
   <div class="artical">
-    <img src="assets/img/basic/artical-section-translation.jpg" alt="Articles about Translation">
+    <img src="/assets/img/basic/artical-section-translation.jpg" alt="Articles about Translation">
     <div class="artical-content">
       <p>—文章類別—</p>
       <h2>翻譯</h2>
       翻譯過的英文文章
       <hr>
-      <a href="/riceblogin/categeory" class="btn btn-light">了解更多</a>
+      <a href="/categeory" class="btn btn-light">了解更多</a>
     </div>
   </div>
 </div>
@@ -472,6 +314,6 @@
 	  </div>
 	</div>
 
-<script src="/riceblogin/assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
