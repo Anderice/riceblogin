@@ -432,6 +432,19 @@ blockquote p {
 .post-content p {
   text-indent: 2rem; }
 
+.post-meta {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: left;
+      align-items: left;
+  -ms-flex-align: baseline;
+      align-items: baseline; }
+
+.author {
+  font-size: 2rem; }
+
 .post-figure {
   opacity: 0.9;
   text-align: center;
@@ -460,18 +473,6 @@ blockquote p {
 
 .figure-small {
   width: 30%; }
-
-.post-meta {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: baseline;
-      align-items: baseline; }
-
-.author {
-  font-size: 2rem; }
-
-.image-float {
-  float: right; }
 
 @media (max-width: 500px) {
   .post-content img {
@@ -564,15 +565,10 @@ blockquote p {
     transition: 0.3s;
     max-height: 300px;
     float: left;
-    object-fit: cover;
-    -webkit-filter: blur(1px);
-            filter: blur(1px); }
-  .post > img:hover {
-    -webkit-filter: blur(0px);
-            filter: blur(0px); }
+    object-fit: cover; }
 
 .post-content {
-  padding: 3rem; }
+  padding: 1rem; }
 
 .post-content-meta-section {
   display: -ms-flexbox;

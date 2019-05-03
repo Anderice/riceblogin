@@ -22,25 +22,39 @@ blockquote p
   p
     text-indent: 2rem
 
+// Post metas
+.post-meta
+  display: flex
+  flex-direction: column
+  align-items: left
+  align-items: baseline
+
+.author
+  font-size: 2rem
+
+// Figure Section
 .post-figure
-
+  opacity: 0.9
   text-align: center
-
   overflow: hidden
   border: 0.3rem solid $dark
   +box-shadow-passive
+  transition: 0.3s
 
   &:hover
-  +box-shadow-active
+    opacity: 1
+    background-color: $dark
+    color: $light
+    +box-shadow-active
+    font-weight: bold
+
+  figcaption
+    margin: 0.5rem
 
   img
     width: 100%
     +box-shadow-passive
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1)
-    transition: all 0.3s
-
-    &:hover
-      transform: scale(1.2)
 
 .figure-large
   width: 100%
@@ -49,17 +63,16 @@ blockquote p
 .figure-small
   width: 30%
 
-.post-meta
-  display: flex
-  align-items: baseline
-
-.author
-  font-size: 2rem
-
-.image-float
-  float: right
-
 @include small-size()
   .post-content
     img
       max-width: 100%
+
+  .post-figure
+    margin: 0
+  .figure-large
+    width: 100%
+  .figure-medium
+    width: 100%
+  .figure-small
+    width: 100%

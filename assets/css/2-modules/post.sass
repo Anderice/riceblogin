@@ -22,6 +22,17 @@ blockquote p
   p
     text-indent: 2rem
 
+// Post metas
+.post-meta
+  display: flex
+  flex-direction: column
+  align-items: left
+  align-items: baseline
+
+.author
+  font-size: 2rem
+
+// Figure Section
 .post-figure
   opacity: 0.9
   text-align: center
@@ -52,16 +63,6 @@ blockquote p
 .figure-small
   width: 30%
 
-.post-meta
-  display: flex
-  align-items: baseline
-
-.author
-  font-size: 2rem
-
-.image-float
-  float: right
-
 @include small-size()
   .post-content
     img
@@ -69,7 +70,6 @@ blockquote p
 
   .post-figure
     margin: 0
-
   .figure-large
     width: 100%
   .figure-medium

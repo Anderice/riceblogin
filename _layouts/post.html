@@ -8,10 +8,10 @@ hero-class: post-hero
 <!-- Post time -->
 <artical class="post-content">
   <div class="post-meta">
-    <p class="author">作者 : {{ page.author }}</p>
+    <h4 class="author">作者 : {{ page.author }}</h4>
     <time class="comment comment-heavy italic">{{ page.date | date_to_string }}</time>
-    <!-- <hr class="hr-heavy hr-space"> -->
   </div>
+  <hr class="hr-heavy hr-space">
 {{ content }}
 </artical>
   {% include disqus.html %}
